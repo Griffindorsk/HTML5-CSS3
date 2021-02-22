@@ -1,0 +1,223 @@
+* {
+margin: 0;
+padding: 0;
+}
+body {
+    max-width: 980px;
+    min-width: 320px;
+    margin: 0 1vw;
+    font-family: sans-serif;
+}
+.top_header {
+    display: flex;
+    align-items: baseline;
+    background-color: #020202;
+}
+.logo_top {
+   margin: 0 0 0 10px;
+}
+.logo_top img {
+    width: 80px;
+    padding: 0;
+    margin: 0;
+}
+.menu_top {
+    margin: 0 0 0 10px;
+    width: 100%;
+    /* max-width: 900px; */
+    /* min-width: 400px; */
+    display: flex;
+}
+.menu_top a {
+    font-weight: 600;
+    color: rgb(255, 81, 0);
+    background-color: #020202;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+}
+.last {
+    margin-left: auto;
+}
+.menu_top a:hover {
+    color: white;
+    background-color: #551616;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 12px;
+    /* width: 100%; */
+}
+
+main figure {
+    float: left;
+    width: 40%;
+    min-width: 180px;
+    margin-bottom: 15px;
+}
+main figure img {
+    width: 100%;
+}
+main footer {
+    text-align: right;
+}
+@media (max-width: 400px) {
+    main figure {
+    float: none;
+    }
+}
+
+.columns_block {
+    margin-bottom: 15px;
+}
+
+.columns_block header h2 {
+    font-size: 18px;
+    padding: 10px 10px 15px 10px;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+article {
+    margin-right: 10px;
+    padding: 10px 10px 5px 10px;
+    width: 100%;
+    min-width: 200px;
+    max-width: 320px;
+    background: linear-gradient(
+        #c8fcef 0,
+        #e6fff8 30%,
+        #f8fffd 100%);
+    box-shadow: 2px 2px 12px #515e5a;
+}
+.last_column {
+    margin-ight: 0;
+}
+
+
+@media (max-width: 840px) {
+    .columns {
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+    }
+    article {
+    margin-right: 0;
+    margin-bottom: 10px;
+    max-width: 90%;
+    box-shadow: none;
+    }
+    .columns_block header h2 {
+        text-align: center;
+    }
+}
+
+article header h3 {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+article img {
+    max-width: 100%;
+}
+article figcaption {
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+article p {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+article footer {
+    text-align: right;
+}
+article footer a {
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(26, 46, 77);
+}
+main footer a {
+    font-size: 16px;
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(26, 46, 77);
+}
+.columns ul {
+    list-style-position: inside;
+    list-style: none;
+}
+
+.footer_bottom {
+    background-color: white;
+    width: 100%;
+}
+    .footer_bottom p {
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        color:#020202;
+        padding-left: 10px;
+    }
+
+.temp_form {
+    margin: 0 10px 10px 0;
+    padding: 10px 10px 5px 10px;
+    width: 100%;
+    max-width: 320px;
+    min-width: 240px;
+    background: cornsilk;
+    box-shadow: 2px 2px 12px #515e5a;
+    font-size: 12px;
+}
+.temp_form input {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    width: 240px;
+    border: none;
+    background-color: rgb(230, 255, 255);
+    /* border-radius: 3px; */
+    caret-color: rgb(255, 0, 0);
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+}
+.temp_form input::placeholder {
+    font-size: 0.6rem;
+}
+.temp_form button {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    padding: 5px 10px;
+    margin: 10px 0 0 0;
+    border: none;
+    border-radius: 4px;
+}
+
+.temp_form h3 {
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+.temp_form fieldset {
+    border: none;
+    padding: 5px 0px;
+    font-size: 0.8rem;
+}
+.temp_form label {
+    padding-bottom: 10px;
+}
+
+.radio_set input {
+    width: auto;
+    margin: 0 10px;
+}
+.radio_set p {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    background-color: cadetblue;
+}
